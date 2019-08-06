@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <button className="button" onMouseOver={change}>
+      <button className="button" onMouseOver={change} onMouseOut={change2}>
         Click
       </button>
       </header>
@@ -16,7 +16,10 @@ function App() {
 
 function change(){
   console.log('change is hovered');
+}
 
+function change2(){
+  console.log('change is hovered out');
 }
 
 export default App;
